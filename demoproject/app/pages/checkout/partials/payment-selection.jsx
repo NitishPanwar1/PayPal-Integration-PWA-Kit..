@@ -71,6 +71,7 @@ const PaymentSelection = ({form, func3, hideSubmitButton, onSubmit = () => null}
             console.log('orderTotal:' + orderTotal)
 
             var myHeaders = new Headers()
+            //encoding clientid and clientsecret to base64
             var base64encodedKey = Buffer.from(
                 'AX1waZtfBYnJ7BPQwaB-P4VAyn8aQ7EENsCOapxLQCwadDgdRWgIXCrIa79AUTmRrcYgy4gCJq7cyrm7:EN-5j5ggzL6-yodQfcD2FrvLtOExeQ_hEVMAX9bb4ZeTHhBUv7x92HZsBSEQ93kLOIWBmJWX4jsYc2kI'
             ).toString('Base64')

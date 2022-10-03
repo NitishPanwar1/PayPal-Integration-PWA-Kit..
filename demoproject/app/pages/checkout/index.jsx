@@ -83,10 +83,8 @@ const Checkout = () => {
                     {method: 'GET', headers: {Authorization: 'Bearer ' + accessToken}}
                 )
                 if (res1.ok) {
-                    console.log('after json222--------------------------------------------------')
                     var result2 = await res1.json()
-                    console.log('Capture URL 11 ------------------------------')
-                    console.log(result2.c_captureURL)
+                    //storing captureURl from custom preferences to endpoint variable
                     endpoint = result2.c_captureURL
                 }
             }
@@ -107,20 +105,12 @@ const Checkout = () => {
                 body: raw,
                 redirect: 'follow'
             }
-            console.log('endpoint is---------------------------')
-            console.log(endpoint)
             const res = await fetch(endpoint, requestOptions)
             if (res.ok) {
                 console.log('Payment is captured')
             }
         }
     }
-
-    // const handleChange = (event) => {
-    //     if (event.target.value != null || event.target.value != '') {
-    //         setValue(event.target.value)
-    //     }
-    // }
 
     const submitOrder = async () => {
         setIsLoading(true)

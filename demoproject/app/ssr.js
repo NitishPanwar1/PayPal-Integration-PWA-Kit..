@@ -48,7 +48,6 @@ const {handler} = runtime.createHandler(options, (app) => {
                         'api-m.sandbox.paypal.com',
                         'api.sandbox.paypal.com'
                     ],
-
                     // Do not upgrade insecure requests for local development
                     'upgrade-insecure-requests': isRemote() ? [] : null
                 }
