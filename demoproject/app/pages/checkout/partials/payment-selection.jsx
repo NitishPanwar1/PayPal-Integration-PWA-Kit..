@@ -133,7 +133,7 @@ const PaymentSelection = ({form, func3, hideSubmitButton, onSubmit = () => null}
                     }
                 )
                 if (res2.ok) {
-                    console.log('access token successfull------------------')
+                    console.log('Get Access Token successfull------------------')
                     var response = await res2.json()
                     var accessToken = response.access_token
                     console.log('access Token ==' + accessToken)
@@ -150,7 +150,7 @@ const PaymentSelection = ({form, func3, hideSubmitButton, onSubmit = () => null}
                         }
                     )
                     if (res3.ok) {
-                        console.log('Response Success')
+                        console.log('Capture URL is successfully stored in Site Preferences')
                         var contentResult2 = await res3.json()
                         console.log(contentResult2)
                     }
