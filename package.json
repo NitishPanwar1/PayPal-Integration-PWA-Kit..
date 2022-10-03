@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@craftzdog/react-native-buffer": "^6.0.5",
+    "@paypal/paypal-js": "^5.1.1",
+    "express": "^4.18.1",
+    "paypal-rest-sdk": "^1.8.1",
+    "react-native-quick-base64": "^2.0.5",
+    "request": "^2.88.2",
+    "unirest": "^0.6.0"
+  }
+}
